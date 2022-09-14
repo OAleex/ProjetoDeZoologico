@@ -7,15 +7,16 @@ public class AnimalModel {
     String genero;
     String reino;
     String classe;
-
     double pesoDoAnimal;
+    String nomeDoAmbiente;
 
-    public AnimalModel(String nomeDoAnimal, String genero, String reino, String classe, double pesoDoAnimal) {
+    public AnimalModel(String nomeDoAnimal, String genero, String reino, String classe, double pesoDoAnimal, String nomeDoAmbiente) {
         this.nomeDoAnimal = nomeDoAnimal;
         this.genero = genero;
         this.reino = reino;
         this.classe = classe;
         this.pesoDoAnimal = pesoDoAnimal;
+        this.nomeDoAmbiente = nomeDoAmbiente;
     }
 
     public String getGenero() {
@@ -61,6 +62,7 @@ public class AnimalModel {
                 "Genero: " + genero +
                 "Reino:" + reino +
                 "Classe: " + classe +
-                "Peso: " + pesoDoAnimal + "\n";
+                "Peso: " + pesoDoAnimal +
+                "\nNome do Ambiente: " + nomeDoAmbiente + "\n";
     }
 }

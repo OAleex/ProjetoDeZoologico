@@ -18,7 +18,8 @@ public class Main {
                 "Animalia\n",
                 "Carnivoro\n",
                 true,
-                80.9);
+                80.9,
+                "Savanas\n");
         // Leão 2
         Leao leao2 = new Leao(
                 "\n[Leao 02] - Jason",
@@ -26,7 +27,8 @@ public class Main {
                 "Animalia\n",
                 "Carnivoro\n",
                 true,
-                90);
+                90,
+                "Savanas\n");
 
         // Macaco 1
         Macaco macaco1 = new Macaco(
@@ -36,7 +38,8 @@ public class Main {
                 "Mammalia\n",
                 true,
                 true,
-                88.4);
+                88.4,
+                "Tropical\n");
 
         // Macaco 2
         Macaco macaco2 = new Macaco(
@@ -46,7 +49,8 @@ public class Main {
                 "Mammalia\n",
                 true,
                 true,
-                81.7);
+                81.7,
+                "Tropical\n");
 
         // Capivara 1
 
@@ -56,7 +60,8 @@ public class Main {
                 "Animalia\n",
                 "Mammalia\n",
                 true,
-                84.7);
+                84.7,
+                "Aquatico\n");
 
         // Capivara 2
         Capivara capivara2 = new Capivara(
@@ -65,7 +70,8 @@ public class Main {
                 "Animalia\n",
                 "Mammalia\n",
                 true,
-                84.7);
+                84.7,
+                "Aquatico");
 
         ambiente.setListaDeAnimais(0, leao1);
         ambiente.setListaDeAnimais(1,leao2);

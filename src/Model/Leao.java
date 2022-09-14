@@ -4,8 +4,8 @@ public class Leao extends AnimalModel {
 
     boolean reiDaSelva;
 
-    public Leao(String nomeDoAnimal, String genero, String reino, String classe, boolean reiDaSelva, double pesoDoAnimal) {
-        super(nomeDoAnimal, genero, reino, classe, pesoDoAnimal);
+    public Leao(String nomeDoAnimal, String genero, String reino, String classe, boolean reiDaSelva, double pesoDoAnimal, String nomeDoAmbiente) {
+        super(nomeDoAnimal, genero, reino, classe, pesoDoAnimal, nomeDoAmbiente);
         this.reiDaSelva = reiDaSelva;
     }
 

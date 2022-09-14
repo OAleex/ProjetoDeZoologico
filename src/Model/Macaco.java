@@ -6,8 +6,8 @@ public class Macaco extends AnimalModel {
     boolean comeBanana;
     boolean riMuito;
 
-    public Macaco(String nomeDoAnimal, String genero, String reino, String classe, boolean comeBanana, boolean riMuito, double pesoDoAnimal) {
-        super(nomeDoAnimal, genero, reino, classe, pesoDoAnimal);
+    public Macaco(String nomeDoAnimal, String genero, String reino, String classe, boolean comeBanana, boolean riMuito, double pesoDoAnimal, String nomeDoAmbiente) {
+        super(nomeDoAnimal, genero, reino, classe, pesoDoAnimal, nomeDoAmbiente);
         this.comeBanana = comeBanana;
         this.riMuito = riMuito;
     }

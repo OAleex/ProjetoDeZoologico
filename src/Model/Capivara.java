@@ -4,8 +4,8 @@ public class Capivara extends AnimalModel {
 
     boolean melhorAmigo;
 
-    public Capivara(String nomeDoAnimal, String genero, String reino, String classe, boolean melhorAmigo, double pesoDoAnimal) {
-        super(nomeDoAnimal, genero, reino, classe, pesoDoAnimal);
+    public Capivara(String nomeDoAnimal, String genero, String reino, String classe, boolean melhorAmigo, double pesoDoAnimal, String nomeDoAmbiente) {
+        super(nomeDoAnimal, genero, reino, classe, pesoDoAnimal, nomeDoAmbiente);
         this.melhorAmigo = melhorAmigo;
     }
 
