@@ -62,7 +62,7 @@ public class AnimalModel {
                 "Genero: " + genero +
                 "Reino:" + reino +
                 "Classe: " + classe +
-                "Peso: " + pesoDoAnimal +
+                "Peso: " + pesoDoAnimal + " kg" +
                 "\nNome do Ambiente: " + nomeDoAmbiente + "\n";
     }
 }
