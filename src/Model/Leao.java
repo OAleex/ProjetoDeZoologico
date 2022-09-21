@@ -1,6 +1,9 @@
 package Model;
 
-public class Leao extends AnimalModel {
+import Interface.IAnimalLeao;
+
+public class Leao extends AnimalModel implements IAnimalLeao {
+
 
     boolean reiDaSelva;
 
@@ -35,6 +38,21 @@ public class Leao extends AnimalModel {
     @Override
     public String getClasse() {
         return super.getClasse();
+    }
+
+    @Override
+    public void domesticado() {
+        System.out.println("Ele eh domesticado.");
+    }
+
+    @Override
+    public void naoEhDomesticado() {
+        System.out.println("Ele nao eh domesticado.");
+    }
+
+    @Override
+    public void comer(int massa) {
+        System.out.printf("Ele come %dkg de massa.%n", massa);
     }
 }
 

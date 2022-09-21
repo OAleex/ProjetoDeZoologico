@@ -9,6 +9,8 @@ import Model.Capivara;
 public class Main {
 
     public static void main(String[] args) {
+
+
         // Zoologico
         Ambiente ambiente = new Ambiente(6);
         // Leão 1
@@ -19,7 +21,10 @@ public class Main {
                 "Carnivoro\n",
                 true,
                 80.9,
-                "Savanas\n");
+                "Savanas\n"
+
+        );
+
         // Leão 2
         Leao leao2 = new Leao(
                 "\n[Leao 02] - Jason",
@@ -87,9 +92,39 @@ public class Main {
                 1500,
                 6,
                 ambiente);
-
-
         System.out.print(zoologico);
         System.out.println(zoologico.getAmbiente());
+
+        // Interfaces
+        // Leao1
+        System.out.println("\n\n[Interfaces]");
+        System.out.println("\n[Leão Simbinha]");
+        leao1.domesticado();
+        leao1.comer(5);
+
+        // Leao2
+        System.out.println("\n[Leão Jason]");
+        leao2.naoEhDomesticado();
+        leao2.comer(4);
+
+        // Macaco1
+        System.out.println("\n[Macaco Grillz]");
+        macaco1.fazCambalhota();
+        macaco1.tamanhoDoSalto(3);
+
+        // Macaco2
+        System.out.println("\n[Macaco Flower]");
+        macaco2.naoFazCambalhota();
+        macaco2.tamanhoDoSalto(6);
+
+        // Capivara1
+        System.out.println("\n[Capivara Cheetos]");
+        capivara1.tempoEmBaixoDaAgua(4);
+        capivara1.consegueCorrer();
+
+        // Capivara2
+        System.out.println("\n[Capivara Elinis]");
+        capivara1.tempoEmBaixoDaAgua(5);
+        capivara1.naoConsegueCorrer();
+         }
     }
-}

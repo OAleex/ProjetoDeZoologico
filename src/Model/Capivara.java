@@ -1,6 +1,8 @@
 package Model;
 
-public class Capivara extends AnimalModel {
+import Interface.IAnimalCapivara;
+
+public class Capivara extends AnimalModel implements IAnimalCapivara {
 
     boolean melhorAmigo;
 
@@ -35,5 +37,21 @@ public class Capivara extends AnimalModel {
     @Override
     public String getClasse() {
         return super.getClasse();
+    }
+
+    @Override
+    public void tempoEmBaixoDaAgua(int tempo) {
+        System.out.printf("Ele fica %d minutos em baixo d'agua!%n", tempo);
+    }
+
+    @Override
+    public void consegueCorrer() {
+        System.out.println("Esse corre, eh ligeiro!");
+
+    }
+
+    @Override
+    public void naoConsegueCorrer() {
+        System.out.println("Ele nao corre!");
     }
 }

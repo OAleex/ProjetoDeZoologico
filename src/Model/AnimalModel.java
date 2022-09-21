@@ -2,7 +2,6 @@ package Model;
 
 // Classe Modelo para Construir a base de outros animais.
 public class AnimalModel {
-
     String nomeDoAnimal;
     String genero;
     String reino;
@@ -64,5 +63,6 @@ public class AnimalModel {
                 "Classe: " + classe +
                 "Peso: " + pesoDoAnimal + " kg" +
                 "\nNome do Ambiente: " + nomeDoAmbiente + "\n";
+
     }
 }

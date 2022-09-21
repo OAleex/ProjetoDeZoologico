@@ -1,7 +1,9 @@
 package Model;
 
+import Interface.IAnimalMacaco;
+
 // Macaco e suas caracteristicas
-public class Macaco extends AnimalModel {
+public class Macaco extends AnimalModel implements IAnimalMacaco {
 
     boolean comeBanana;
     boolean riMuito;
@@ -46,5 +48,20 @@ public class Macaco extends AnimalModel {
     @Override
     public String getClasse() {
         return super.getClasse();
+    }
+
+    @Override
+    public void tamanhoDoSalto(int salto) {
+        System.out.printf("Tamanho do salto é de %d metros.%n", salto);
+    }
+
+    @Override
+    public void fazCambalhota() {
+        System.out.println("Esse faz cambalhota, piruleta!");
+    }
+
+    @Override
+    public void naoFazCambalhota() {
+        System.out.println("nao faz cambalhota, nao eh piruleta!");
     }
 }
